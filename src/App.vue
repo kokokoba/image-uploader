@@ -1,15 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ImageUploaderComplete/>
+  <ImageUploader/>
+  <Progress/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ImageUploader from './components/ImageUploader.vue'
+import Progress from './components/Progress.vue'
+import ImageUploaderComplete from './components/ImageUploaderComplete.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ImageUploader,
+    Progress,
+    ImageUploaderComplete
   }
 }
 </script>
